@@ -1,0 +1,46 @@
+{
+    "default_filament_colour": [
+        "#008000"
+    ],
+    "fan_max_speed": [
+        "80"
+    ],
+    "fan_min_speed": [
+        "70"
+    ],
+    "filament_flow_ratio": [
+        "0.99"
+    ],
+    "filament_max_volumetric_speed": [
+        "17"
+    ],
+    "filament_settings_id": [
+        "FLSun Generic PLA - Copy"
+    ],
+    "from": "User",
+    "full_fan_speed_layer": [
+        "3"
+    ],
+    "hot_plate_temp": [
+        "60"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "60"
+    ],
+    "inherits": "FLSun Generic PLA",
+    "is_custom_defined": "0",
+    "name": "FLSun Generic PLA - Copy",
+    "nozzle_temperature_initial_layer": [
+        "210"
+    ],
+    "overhang_fan_speed": [
+        "95"
+    ],
+    "slow_down_layer_time": [
+        "2"
+    ],
+    "support_material_interface_fan_speed": [
+        "95"
+    ],
+    "version": "1.6.4.0"
+}

@@ -1,0 +1,147 @@
+{
+    "bed_custom_model": "C:\\\\Users\\\\fuckmicrosoft\\\\Downloads\\\\FSR_flsun_sr_.stl",
+    "before_layer_change_gcode": "TIMELAPSE_TAKE_FRAME",
+    "deretraction_speed": [
+        "35"
+    ],
+    "from": "User",
+    "inherits": "FLSun V400 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "G91 ; relative coordinates\nG1 E-5 F300 ; retract filament a bit before lifting\nG1 Z+5 E-5 F3000 ; raise platform from current position\nG28 X0 Y0 ; home axis\nG90 ; absolute coordinates\nG92 E0 ; reset extruder\nM104 S0 ; turn off hotend\nM140 S0 ; turn off heat bed\nM107 ; turn off fans\nM84 ; disable motors",
+    "machine_max_acceleration_retracting": [
+        "4000",
+        "5000"
+    ],
+    "machine_max_jerk_x": [
+        "25",
+        "12"
+    ],
+    "machine_max_jerk_y": [
+        "25",
+        "12"
+    ],
+    "machine_max_speed_e": [
+        "40",
+        "30"
+    ],
+    "machine_max_speed_x": [
+        "300",
+        "1000"
+    ],
+    "machine_max_speed_y": [
+        "300",
+        "1000"
+    ],
+    "machine_max_speed_z": [
+        "50",
+        "20"
+    ],
+    "machine_start_gcode": "G21 ; millimeter units\nG90 ; absolute coordinates\nM82 ; E absolute\nM140 S[bed_temperature_initial_layer_single]\nM104 S[nozzle_temperature_initial_layer] T0\nM190 S[bed_temperature_initial_layer_single]\nM109 S[nozzle_temperature_initial_layer]\nG28 ; home axis\nBED_MESH_PROFILE LOAD=default\n; Lower nozzle and move to start position\nG1 Z150\nG1 X-125 Y0 Z0.4 F3000\n; Extrude about 40 mm by printing a 90 degree arc\nG3 X0 Y-125 I125 Z0.3 E40 F2700\n; Retract and move nozzle up\nG92 E0\nG1 E-1.5 F1800\nG0 Z0.5\nG1 E0 F300",
+    "name": "FLSun V400 0.4 nozzle - Copy",
+    "nozzle_type": "brass",
+    "print_host": "192.168.1.100",
+    "printable_area": [
+        "130.003x11.3738",
+        "128.517x22.6611",
+        "126.053x33.7759",
+        "122.63x44.6336",
+        "118.273x55.1517",
+        "113.016x65.25",
+        "106.899x74.8517",
+        "99.9688x83.8838",
+        "92.2774x92.2774",
+        "83.8838x99.9688",
+        "74.8517x106.899",
+        "65.25x113.016",
+        "55.1517x118.273",
+        "44.6336x122.63",
+        "33.7759x126.053",
+        "22.6611x128.517",
+        "11.3738x130.003",
+        "7.99082e-15x130.5",
+        "-11.3738x130.003",
+        "-22.6611x128.517",
+        "-33.7759x126.053",
+        "-44.6336x122.63",
+        "-55.1517x118.273",
+        "-65.25x113.016",
+        "-74.8517x106.899",
+        "-83.8838x99.9688",
+        "-92.2774x92.2774",
+        "-99.9688x83.8838",
+        "-106.899x74.8517",
+        "-113.016x65.25",
+        "-118.273x55.1517",
+        "-122.63x44.6336",
+        "-126.053x33.7759",
+        "-128.517x22.6611",
+        "-130.003x11.3738",
+        "-130.5x1.59816e-14",
+        "-130.003x-11.3738",
+        "-128.517x-22.6611",
+        "-126.053x-33.7759",
+        "-122.63x-44.6336",
+        "-118.273x-55.1517",
+        "-113.016x-65.25",
+        "-106.899x-74.8517",
+        "-99.9688x-83.8838",
+        "-92.2774x-92.2774",
+        "-83.8838x-99.9688",
+        "-74.8517x-106.899",
+        "-65.25x-113.016",
+        "-55.1517x-118.273",
+        "-44.6336x-122.63",
+        "-33.7759x-126.053",
+        "-22.6611x-128.517",
+        "-11.3738x-130.003",
+        "-2.39725e-14x-130.5",
+        "11.3738x-130.003",
+        "22.6611x-128.517",
+        "33.7759x-126.053",
+        "44.6336x-122.63",
+        "55.1517x-118.273",
+        "65.25x-113.016",
+        "74.8517x-106.899",
+        "83.8838x-99.9688",
+        "92.2774x-92.2774",
+        "99.9688x-83.8838",
+        "106.899x-74.8517",
+        "113.016x-65.25",
+        "118.273x-55.1517",
+        "122.63x-44.6336",
+        "126.053x-33.7759",
+        "128.517x-22.6611",
+        "130.003x-11.3738",
+        "130.5x-3.19633e-14"
+    ],
+    "printable_height": "320",
+    "printer_settings_id": "FLSun V400 0.4 nozzle - Copy",
+    "retract_before_wipe": [
+        "99%"
+    ],
+    "retract_when_changing_layer": [
+        "0"
+    ],
+    "retraction_length": [
+        "5.5"
+    ],
+    "retraction_minimum_travel": [
+        "0.5"
+    ],
+    "retraction_speed": [
+        "35"
+    ],
+    "version": "1.6.4.0",
+    "wipe": [
+        "0"
+    ],
+    "wipe_distance": [
+        "0.4"
+    ],
+    "z_hop": [
+        "0.3"
+    ],
+    "z_hop_types": [
+        "Slope Lift"
+    ]
+}
